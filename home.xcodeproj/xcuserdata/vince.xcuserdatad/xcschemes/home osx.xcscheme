@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "61636345186096F5007BE424"
-               BuildableName = "home osx.app"
+               BuildableName = "home.app"
                BlueprintName = "home osx"
                ReferencedContainer = "container:home.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61636345186096F5007BE424"
-            BuildableName = "home osx.app"
+            BuildableName = "home.app"
             BlueprintName = "home osx"
             ReferencedContainer = "container:home.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61636345186096F5007BE424"
-            BuildableName = "home osx.app"
+            BuildableName = "home.app"
             BlueprintName = "home osx"
             ReferencedContainer = "container:home.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61636345186096F5007BE424"
-            BuildableName = "home osx.app"
+            BuildableName = "home.app"
             BlueprintName = "home osx"
             ReferencedContainer = "container:home.xcodeproj">
          </BuildableReference>

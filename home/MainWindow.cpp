@@ -1,8 +1,6 @@
 #include "MainWindow.h"
 #include "Home.h"
 
-//#import <UIKit/UIKit.h>
-//#import <Foundation/Foundation.h>
 
 #if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 # include "nuiMainMenu.h"

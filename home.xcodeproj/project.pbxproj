@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610B35BE1860A8060062E2D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610B35BD1860A8060062E2D2 /* Cocoa.framework */; };
 		612D8CA618586B2A00EF0A98 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549CC61857CE6A00F82C17 /* OpenGLES.framework */; };
 		612D8CA818586B3A00EF0A98 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D8CA718586B3900EF0A98 /* GLKit.framework */; };
 		612D8CA918586B5900EF0A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549C5A18570C7500F82C17 /* Foundation.framework */; };
@@ -23,7 +24,6 @@
 		61549CB21857BFB100F82C17 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549CB11857BFB100F82C17 /* CoreData.framework */; };
 		61549CB41857BFCD00F82C17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549CB31857BFCD00F82C17 /* CFNetwork.framework */; };
 		61549CB61857C0ED00F82C17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549CB51857C0EC00F82C17 /* CFNetwork.framework */; };
-		61636349186096F5007BE424 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61636348186096F5007BE424 /* Cocoa.framework */; };
 		61636353186096F5007BE424 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61636351186096F5007BE424 /* InfoPlist.strings */; };
 		61636359186096F5007BE424 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 61636357186096F5007BE424 /* Credits.rtf */; };
 		61636361186096F5007BE424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61636360186096F5007BE424 /* Images.xcassets */; };
@@ -85,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610B35BD1860A8060062E2D2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		612D8CA718586B3900EF0A98 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		612D8CAB18587A9800EF0A98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		612D8CAF18587FB500EF0A98 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = resources/css; sourceTree = "<group>"; };
@@ -149,11 +150,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610B35BE1860A8060062E2D2 /* Cocoa.framework in Frameworks */,
 				6163638918609EB6007BE424 /* OpenGL.framework in Frameworks */,
 				6163638318609840007BE424 /* Accelerate.framework in Frameworks */,
 				616363811860983C007BE424 /* libthirdparty_OSX.a in Frameworks */,
 				6163638018609837007BE424 /* libnuiCocoa.a in Frameworks */,
-				61636349186096F5007BE424 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +231,7 @@
 		61636347186096F5007BE424 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				610B35BD1860A8060062E2D2 /* Cocoa.framework */,
 				6163638818609EB6007BE424 /* OpenGL.framework */,
 				6163638218609840007BE424 /* Accelerate.framework */,
 				61636348186096F5007BE424 /* Cocoa.framework */,
@@ -707,6 +709,7 @@
 				61636375186096F5007BE424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
