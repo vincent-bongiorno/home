@@ -1,0 +1,101 @@
+
+
+nuiButton!
+{
+  ActivationOffset: 16;
+}
+
+@font Normal
+{
+  Name : "Helvetica";
+  Size : 11;
+  Bold : false;
+}
+
+@font NormalBold
+{
+  Name : "Helvetica";
+  Size : 11;
+  Bold : true;
+}
+
+
+"ButtonLabel"!
+{
+  TextColor: white;
+  Font: Normal;
+  HMargin: 0;
+  VMargin: 0;
+//  Position: Fill;
+  TextPosition: Center;
+//  BorderLeft: 18;
+//  BorderRight: 18;
+//  UseEllipsis: true;
+}
+"ButtonLabel"[Selected:false]
+{
+  TextColor: rgb(0,0,0);
+}
+"ButtonLabel"[Selected:true]
+{
+  TextColor: rgb(128,128,128);
+}
+
+@nuiFrame dButtonUP
+{
+  Color: rgb(128, 128, 128, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiFrame dButtonDOWN
+{
+  Color: rgb(64, 64, 64, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiFrame dButtonDISABLED
+{
+  Color: rgb(32, 32, 32, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiStateDecoration dButton
+{
+  OnUp: dButtonUP;
+	OnDown: dButtonDOWN;
+  OnUpDisabled: dButtonDISABLED;
+  OnDownDisabled: dButtonDISABLED;
+}
+
+"Button"!
+{
+  DecorationMode: Overdraw;
+  Decoration: dButton;
+  BorderLeft: 3;
+  BorderRight: 3;
+  BorderTop: 3;
+  BorderBottom: 3;
+  Position: Center;
+}
+
+
+@nuiColorDecoration dMainView
+{
+  FillColor: rgb(255,255,255);
+  ShapeMode: Fill;
+}
+
+"MainView"!
+{
+  DecorationMode: Overdraw;
+  Decoration: dMainView;
+  Position: Fill;
+}
+
+
+
+
+

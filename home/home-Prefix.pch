@@ -1,0 +1,48 @@
+#ifndef __home_pch__
+#define __home_pch__
+
+#include "nui.h"
+
+#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+#import <Availability.h>
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#endif//(TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+
+
+# define HOME_VERSION_MAJ				(1)
+# define HOME_VERSION_MIN				(0)
+# define HOME_VERSION_REV				(0)
+
+#define HOME_VERSION_INT        HOME_VERSION_MAJ * 100 + HOME_VERSION_MIN * 10 + HOME_VERSION_REV
+#define HOME_VERSION_NSSTRING
+
+#define HOME_SCREEN_WIDTH				480.f
+#define HOME_SCREEN_HEIGHT			320.f
+
+/*******************
+ * Global includes *
+ ******************/
+
+#include "nui.h"
+
+/**************
+ * OS Version *
+ **************/
+
+// System version check macros
+#if (TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
+# define SYSTEM_VERSION_EQUAL_TO(v)        ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+# define SYSTEM_VERSION_GREATER_THAN(v)    ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+# define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+# define SYSTEM_VERSION_LESS_THAN(v)       ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+# define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#endif
+
+
+#endif//__home_pch__
+
+
