@@ -112,8 +112,9 @@ public:
 
 private:
   bool mAppLoaded;
-//  nuiTimer mTimer;
+  nuiTimer mTimer;
   nuiEventSink<MainWindow> mWinSink;
+  void OnTimerTick(const nuiEvent& rEvent);
   void OnNotification(const nuiNotification& rNotification);
 };
 

@@ -11,7 +11,7 @@
 #include "nuiHBox.h"
 
 #include "nuiAttributeAnimation.h"
-
+#include "MainView.h"
 
 #pragma mark MainWindow
 /**************
@@ -24,7 +24,7 @@ MainWindow::MainWindow( const nglContextInfo& rContext,
                 const nglContext* pShared )
 : nuiMainWindow(rContext, rInfo, pShared, nglPath((_T("rsrc:")))),
   nuiNotificationObserver(),
-//  mTimer(1.0/30.0),
+  mTimer(1.0/10.0),
   mWinSink(this)
 {
   SetObjectClass(_T("MainWindow"));
@@ -149,17 +149,25 @@ void MainWindow::OnCreation()
 //  [pool release];
 //#endif
 
-  nuiButton* pButton = new nuiButton("HELLO WOLRD");
-  pButton->SetObjectName("Button");
-  pButton->GetChild(0)->SetObjectName("ButtonLabel");
-  nuiSimpleContainer* pContainer = new nuiSimpleContainer();
-  pContainer->SetObjectName("MainView");
-  AddChild(pContainer);
-  pContainer->AddChild(pButton);
+  MainView* pView = new MainView();
+  pView->SetObjectName("MainView");
+  AddChild(pView);
+
+//  nuiButton* pButton = new nuiButton("HELLO WOLRD");
+//  pButton->SetObjectName("Button");
+//  pButton->GetChild(0)->SetObjectName("ButtonLabel");
+//  nuiSimpleContainer* pContainer = new nuiSimpleContainer();
+//  pContainer->SetObjectName("MainView");
+//  AddChild(pContainer);
+//  pContainer->AddChild(pButton);
   
 //  nuiImage* pImage = new nuiImage("rsrc:/images/8x8_square_outlined.png");
 //  pImage->SetPosition(nuiTopLeft);
 //  AddChild(pImage);
+  
+  mWinSink.Connect(mTimer.Tick, &MainWindow::OnTimerTick);
+  mTimer.Start();
+
   return;
 }
 
@@ -186,6 +194,11 @@ bool MainWindow::LoadCSS(const nglPath& rPath)
 
 	SetCSS(pCSS);
 	return true;
+}
+
+void MainWindow::OnTimerTick(const nuiEvent& rEvent)
+{
+  
 }
 
 void MainWindow::InitHotKeys()

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		610B35BE1860A8060062E2D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610B35BD1860A8060062E2D2 /* Cocoa.framework */; };
+		610B35C11860B64C0062E2D2 /* AMXClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610B35BF1860B64C0062E2D2 /* AMXClient.cpp */; };
+		610B35C21860B64C0062E2D2 /* AMXClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610B35BF1860B64C0062E2D2 /* AMXClient.cpp */; };
+		610B35CB1860C0900062E2D2 /* MainView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610B35C91860C08F0062E2D2 /* MainView.cpp */; };
+		610B35CC1860C0900062E2D2 /* MainView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 610B35C91860C08F0062E2D2 /* MainView.cpp */; };
 		612D8CA618586B2A00EF0A98 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549CC61857CE6A00F82C17 /* OpenGLES.framework */; };
 		612D8CA818586B3A00EF0A98 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D8CA718586B3900EF0A98 /* GLKit.framework */; };
 		612D8CA918586B5900EF0A98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61549C5A18570C7500F82C17 /* Foundation.framework */; };
@@ -86,6 +90,10 @@
 
 /* Begin PBXFileReference section */
 		610B35BD1860A8060062E2D2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		610B35BF1860B64C0062E2D2 /* AMXClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AMXClient.cpp; sourceTree = "<group>"; };
+		610B35C01860B64C0062E2D2 /* AMXClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMXClient.h; sourceTree = "<group>"; };
+		610B35C91860C08F0062E2D2 /* MainView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainView.cpp; sourceTree = "<group>"; };
+		610B35CA1860C0900062E2D2 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		612D8CA718586B3900EF0A98 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		612D8CAB18587A9800EF0A98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		612D8CAF18587FB500EF0A98 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = resources/css; sourceTree = "<group>"; };
@@ -212,6 +220,10 @@
 				61549CA2185713F300F82C17 /* Home.h */,
 				61549CA41857145500F82C17 /* MainWindow.cpp */,
 				61549CA51857145500F82C17 /* MainWindow.h */,
+				610B35BF1860B64C0062E2D2 /* AMXClient.cpp */,
+				610B35C01860B64C0062E2D2 /* AMXClient.h */,
+				610B35C91860C08F0062E2D2 /* MainView.cpp */,
+				610B35CA1860C0900062E2D2 /* MainView.h */,
 				61549C6C18570C7500F82C17 /* Images.xcassets */,
 				61549C6118570C7500F82C17 /* Supporting Files */,
 			);
@@ -431,7 +443,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				61549CA3185713F300F82C17 /* Home.cpp in Sources */,
+				610B35CB1860C0900062E2D2 /* MainView.cpp in Sources */,
 				61549CA61857145500F82C17 /* MainWindow.cpp in Sources */,
+				610B35C11860B64C0062E2D2 /* AMXClient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +454,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6163638418609940007BE424 /* Home.cpp in Sources */,
+				610B35CC1860C0900062E2D2 /* MainView.cpp in Sources */,
 				6163638618609940007BE424 /* MainWindow.cpp in Sources */,
+				610B35C21860B64C0062E2D2 /* AMXClient.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

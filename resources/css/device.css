@@ -72,13 +72,16 @@ nuiButton!
 
 "Button"!
 {
-  DecorationMode: Overdraw;
-  Decoration: dButton;
-  BorderLeft: 3;
-  BorderRight: 3;
-  BorderTop: 3;
-  BorderBottom: 3;
-  Position: Center;
+//  DecorationMode: Overdraw;
+//  Decoration: dButton;
+  BorderLeft: 4;
+  BorderRight: 4;
+  BorderTop: 4;
+  BorderBottom: 4;
+//  BorderLeft: 8;
+//  BorderRight: 8;
+//  BorderTop: 8;
+//  BorderBottom: 8;
 }
 
 
@@ -92,7 +95,7 @@ nuiButton!
 {
   DecorationMode: Overdraw;
   Decoration: dMainView;
-  Position: Fill;
+//  Position: Fill;
 }
 
 
