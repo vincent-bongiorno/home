@@ -3,7 +3,7 @@
 
 #include "nui.h"
 
-#if TARGET_OS_MAC
+#if TARGET_OS_MAC && !(TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
 #import <Cocoa/Cocoa.h>
 #import <AppKit/AppKit.h>
 #import <Foundation/Foundation.h>
@@ -15,7 +15,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #endif
-
 #endif//(TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE)
 
 
@@ -33,7 +32,6 @@
  * Global includes *
  ******************/
 
-#include "nui.h"
 
 /**************
  * OS Version *

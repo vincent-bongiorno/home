@@ -126,7 +126,7 @@ void Home::OnInit()
   
   // Window configuration
   uint Width = 0, Height = 0;
-  uint Angle = 270;
+  uint Angle = 0;
   bool IsFullScreen = false;
   bool DebugObject = false;
   bool PartialRedraw = true;
@@ -163,8 +163,8 @@ void Home::OnInit()
   MainWindow* pMainWin = new MainWindow(ContextInfo, Info);
   pMainWin->Acquire();
   
-//  pMainWin->EnableAutoRotation(false);
-  pMainWin->SetRotation(Angle);
+  pMainWin->EnableAutoRotation(false);
+//  pMainWin->SetRotation(Angle);
   mpWindow = pMainWin;
   if ((!pMainWin) || (pMainWin->GetError()))
   {

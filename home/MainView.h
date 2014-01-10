@@ -12,7 +12,10 @@ private:
   nglString mAMXAddr;
   int16 mAMXPort;
   void OnConnectActivated(const nuiEvent& rEvent);
+  void OnLockActivated(const nuiEvent& rEvent);
   void OnButtonActivated(const nuiEvent& rEvent);
+  void OnAllLightsActivated(const nuiEvent& rEvent);
+
   nuiEventSink<MainView> mViewSink;
 };
 

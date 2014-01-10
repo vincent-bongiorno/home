@@ -244,10 +244,10 @@ void MainWindow::OnClose()
 bool MainWindow::OnRotation(uint Angle)
 {
   //NGL_OUT(_T("Angle: %d\n"), Angle);
-  if (Angle == 90 || Angle == 270)
+//  if (Angle == 90 || Angle == 270)
 //if (Angle == 270)
     return true;
-  return false;
+//  return false;
 }
 
 ///< Device is waking up from sleep or app is regaining focus
@@ -257,10 +257,9 @@ void MainWindow::OnActivation()
   
   //#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 #if TARGET_OS_IPHONE && !TARGET_IPHONE_SIMULATOR
-#endif
-
 // Renable painter
   SetPaintEnabled(true);
+#endif
 }
 
 ///< App is going to sleep or app is losing focus

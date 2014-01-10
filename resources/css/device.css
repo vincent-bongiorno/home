@@ -47,6 +47,7 @@ nuiButton!
 	Texture: "rsrc:/images/8x8.png";
   ClientRect: "{ 3, 3, 2, 2 }";
 	Interpolation: true;
+  UseWidgetFrameColor: true;
 }
 @nuiFrame dButtonDOWN
 {
@@ -70,10 +71,104 @@ nuiButton!
   OnDownDisabled: dButtonDISABLED;
 }
 
+
 "Button"!
 {
-//  DecorationMode: Overdraw;
-//  Decoration: dButton;
+  DecorationMode: Overdraw;
+  Decoration: dButton;
+  BorderLeft: 4;
+  BorderRight: 4;
+  BorderTop: 4;
+  BorderBottom: 4;
+//  BorderLeft: 8;
+//  BorderRight: 8;
+//  BorderTop: 8;
+//  BorderBottom: 8;
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+@nuiFrame dButtonLightUP
+{
+  Color: rgb(128, 128, 128, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+  UseWidgetFrameColor: true;
+}
+@nuiFrame dButtonLightDOWN
+{
+  Color: rgb(64, 64, 64, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiFrame dButtonLightDISABLED
+{
+  Color: rgb(32, 32, 32, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiStateDecoration dButtonLight
+{
+  OnUp: dButtonLightUP;
+	OnDown: dButtonLightDOWN;
+  OnUpDisabled: dButtonLightDISABLED;
+  OnDownDisabled: dButtonLightDISABLED;
+}
+
+"ButtonLight"!
+{
+  DecorationMode: Overdraw;
+  Decoration: dButtonLight;
+  BorderLeft: 4;
+  BorderRight: 4;
+  BorderTop: 4;
+  BorderBottom: 4;
+//  BorderLeft: 8;
+//  BorderRight: 8;
+//  BorderTop: 8;
+//  BorderBottom: 8;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+@nuiFrame dButtonRelayUP
+{
+  Color: rgb(0, 128, 192, 255);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+  UseWidgetFrameColor: true;
+}
+@nuiFrame dButtonRelayDOWN
+{
+  Color: rgb(0, 128, 192, 128);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiFrame dButtonRelayDISABLED
+{
+  Color: rgb(0, 128, 192, 64);
+	Texture: "rsrc:/images/8x8.png";
+  ClientRect: "{ 3, 3, 2, 2 }";
+	Interpolation: true;
+}
+@nuiStateDecoration dButtonRelay
+{
+  OnUp: dButtonRelayUP;
+	OnDown: dButtonRelayDOWN;
+  OnUpDisabled: dButtonRelayDISABLED;
+  OnDownDisabled: dButtonRelayDISABLED;
+}
+
+"ButtonRelay"!
+{
+  DecorationMode: Overdraw;
+  Decoration: dButtonRelay;
   BorderLeft: 4;
   BorderRight: 4;
   BorderTop: 4;

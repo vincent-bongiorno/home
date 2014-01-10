@@ -37,8 +37,6 @@
 		6163638418609940007BE424 /* Home.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61549CA1185713F300F82C17 /* Home.cpp */; };
 		6163638618609940007BE424 /* MainWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61549CA41857145500F82C17 /* MainWindow.cpp */; };
 		6163638918609EB6007BE424 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6163638818609EB6007BE424 /* OpenGL.framework */; };
-		6163638C18609FF6007BE424 /* css in Resources */ = {isa = PBXBuildFile; fileRef = 6163638A18609FF6007BE424 /* css */; };
-		6163638D18609FF6007BE424 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6163638B18609FF6007BE424 /* images */; };
 		619DECA418588B0F00B13AD4 /* libnuiPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619DEC9D18588AEF00B13AD4 /* libnuiPhone.a */; };
 		619DECA518588B1600B13AD4 /* libthirdparty_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 619DECA118588AEF00B13AD4 /* libthirdparty_iOS.a */; };
 /* End PBXBuildFile section */
@@ -129,8 +127,6 @@
 		61636367186096F5007BE424 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6163638218609840007BE424 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		6163638818609EB6007BE424 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
-		6163638A18609FF6007BE424 /* css */ = {isa = PBXFileReference; lastKnownFileType = folder; name = css; path = resources/css; sourceTree = "<group>"; };
-		6163638B18609FF6007BE424 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = resources/images; sourceTree = "<group>"; };
 		619DEC8F18588AEF00B13AD4 /* nui3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nui3.xcodeproj; path = ../nui3/nui3.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,8 +168,6 @@
 		61549C4E18570C7500F82C17 = {
 			isa = PBXGroup;
 			children = (
-				6163638A18609FF6007BE424 /* css */,
-				6163638B18609FF6007BE424 /* images */,
 				612D8CB118587FC400EF0A98 /* images */,
 				612D8CAF18587FB500EF0A98 /* css */,
 				61549C6018570C7500F82C17 /* home */,
@@ -427,8 +421,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6163638C18609FF6007BE424 /* css in Resources */,
-				6163638D18609FF6007BE424 /* images in Resources */,
 				61636353186096F5007BE424 /* InfoPlist.strings in Resources */,
 				61636361186096F5007BE424 /* Images.xcassets in Resources */,
 				61636359186096F5007BE424 /* Credits.rtf in Resources */,
